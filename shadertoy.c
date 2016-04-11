@@ -82,8 +82,8 @@ mouse_press_handler (int button, int state, int x, int y)
     }
   else
     {
-      mouse[2] = -1;
-      mouse[3] = -1;
+      mouse[2] = -mouse[2];
+      mouse[3] = -mouse[3];
     }
 
   snprintf (msg, sizeof (msg), "iMouse:%.0f,%.0f,%.0f,%.0f",
